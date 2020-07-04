@@ -6,7 +6,7 @@ int plus_moins(int choix_joueur, int valeur)
 {
     if(choix_joueur == valeur)
     {
-        printf("Bingo!, Vous avez trouver la valeur.\n");
+        printf("Bingo! Vous avez trouver la valeur.\n");
     }
 
     else if(choix_joueur > valeur)
@@ -49,7 +49,7 @@ int main()
                 do
                 {
                         printf("essai %d\n", essai);
-                        //essai++;
+                        essai++;
                         scanf("%d", &choix_joueur);
                         plus_moins(choix_joueur,valeur);
                 }while (choix_joueur != valeur);
@@ -87,6 +87,7 @@ int main()
                         {
                                 printf("Desole,vous avez perdu!");
                                 printf("Le chiffre est %d,\n",valeur);
+                                break;
                         }
 
                         essai++;
@@ -97,10 +98,6 @@ int main()
         default:
                 printf("Erreur!!!  Vous devrez choisir entre 1,2 et 3.\n");
                 break;
-       //}
-
-
-           //}
 
      }
 
